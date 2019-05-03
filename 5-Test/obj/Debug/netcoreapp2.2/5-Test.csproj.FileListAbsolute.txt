@@ -12,3 +12,6 @@ C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.AssemblyInfo.cs
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.dll
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\2-Domain.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\2-Domain.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.csproj.CopyComplete

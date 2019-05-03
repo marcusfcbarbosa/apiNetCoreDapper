@@ -9,14 +9,13 @@ namespace _5_Test
         [TestMethod]
         public void TestMethod1()
         {
-            var cliente = new Cliente("Marcus",
-            "Fernando",
-            "254556547","marcus@teste.com.br",
-            "11999854787",
-            "rua das alamedas,205");
+            // var cliente = new Cliente("Marcus",
+            // "Fernando",
+            // "254556547","marcus@teste.com.br",
+            // "11999854787",
+            // "rua das alamedas,205");
 
-            var pedido = new Pedido(cliente);
-            
+            // var pedido = new Pedido(cliente);
 
         }
     }

@@ -16,4 +16,14 @@ namespace _2_Domain.StoreContext.Enums
         entregue=2,
         cancelado =3
     }
+
+    public enum EnumDocumentType : byte{
+        CPF=1,
+        CNPJ =2
+    }
+
+    public enum TipoEndereco: byte {
+        Cobranca =1,
+        Entrega=2
+    }
 }

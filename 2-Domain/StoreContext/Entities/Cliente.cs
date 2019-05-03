@@ -1,27 +1,39 @@
 using System;
+using System.Linq;
+using _2_Domain.ValueObjects;
+using System.Collections.Generic;
 
-namespace _2_Domain.StoreContext.Entities{
+namespace _2_Domain.StoreContext.Entities
+{
     public class Cliente
     {
-        public Cliente(string nome, string sobrenome,
-        string documento,string email,string telefone,
-         string endereco){
-                Nome = nome;
-                Sobrenome = sobrenome;
-                Documento = documento;
-                Email = email;
-                Telefone = telefone;
-                Endereco = endereco;
+        private readonly IList<Endereco> _enderecos;
+        public Cliente(Nome nome,
+            Documento documento, 
+            Email email, 
+            string telefone)
+        {
+            Nome = nome;
+            Documento = documento;
+            Email = email;
+            Telefone = telefone;
+            _enderecos = new List<Endereco>();
+            
         }
-        public String Nome { get; private set; }
-        public String Sobrenome { get; private set; }
-        public String Documento { get; private set; }
-        public String Email { get; private set; }
+       
+        public Nome Nome { get; private set; }
+        public Documento Documento { get; private set; }
+        public Email Email { get; private set; }
         public String Telefone { get; private set; }
-        public String Endereco { get; private set; }
+        
+        public IReadOnlyCollection<Endereco> Enderecos => _enderecos.ToArray();
+        public void AdicionaEndereco(Endereco endereco){
+                
+                this._enderecos.Add(endereco);
+        }
 
         public override string ToString(){
-            return $"{Nome} {Sobrenome}";
+            return $"{Nome.PrimeiroNome}  {Nome.Sobrenome}";
         }
     }
 }

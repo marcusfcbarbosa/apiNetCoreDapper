@@ -1,6 +1,8 @@
 Download .Net Core
 https://dotnet.microsoft.com/
 
+link: https://player.balta.io/home
+
 verificar versao
 dotnet --version
 
@@ -31,3 +33,9 @@ dotnet new sln
 
 Adicionar os projetos dentro da solution
 dotnet sln add (caminho de todos os .csprojs)
+=======================
+Estando dentro de uma classlib, e adicionando outra classlib
+Aula13
+dotnet add reference (Caminho dos .csprojs)
+
+COntinua aula 16
