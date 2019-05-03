@@ -19,5 +19,9 @@ namespace _2_Domain.StoreContext.Entities{
         public String Email { get; private set; }
         public String Telefone { get; private set; }
         public String Endereco { get; private set; }
+
+        public override string ToString(){
+            return $"{Nome} {Sobrenome}";
+        }
     }
 }
