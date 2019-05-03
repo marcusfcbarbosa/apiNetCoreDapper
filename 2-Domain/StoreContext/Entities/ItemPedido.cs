@@ -1,4 +1,6 @@
-namespace _2_Domain.StoreContext
+using System;
+
+namespace _2_Domain.StoreContext.Entities
 {
     public class ItemPedido
     {

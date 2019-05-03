@@ -1,6 +1,6 @@
 using System;
 
-namespace _2_Domain.StoreContext
+namespace _2_Domain.StoreContext.Entities
 {
     public class Produto
     {
