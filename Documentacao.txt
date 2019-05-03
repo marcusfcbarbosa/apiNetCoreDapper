@@ -1,0 +1,33 @@
+Download .Net Core
+https://dotnet.microsoft.com/
+
+verificar versao
+dotnet --version
+
+Extensoes recomendadas VSCode
+Auto Import
+Beautify
+One Dark Pro
+Nuget Package Manager
+========================
+Organizando a Solution
+criando a solution
+dotnet new sln 
+criando as libs
+
+1-Api
+dotnet new web
+2-Domain
+dotnet new classlib
+3-Infra
+dotnet new classlib
+4-Shared
+dotnet new classlib
+5-Test
+dotnet new mstest
+
+criando a solution
+dotnet new sln
+
+Adicionar os projetos dentro da solution
+dotnet sln add (caminho de todos os .csprojs)
