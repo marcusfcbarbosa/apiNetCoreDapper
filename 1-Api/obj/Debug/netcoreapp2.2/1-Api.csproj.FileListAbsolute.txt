@@ -1,0 +1,14 @@
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\1-Api.deps.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\1-Api.runtimeconfig.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\1-Api.runtimeconfig.dev.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\1-Api.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\1-Api.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.csprojAssemblyReference.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.csproj.CoreCompileInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.RazorAssemblyInfo.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.RazorAssemblyInfo.cs
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.AssemblyInfoInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.AssemblyInfo.cs
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.RazorTargetAssemblyInfo.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.pdb

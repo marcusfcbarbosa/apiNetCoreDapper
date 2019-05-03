@@ -1,0 +1,9 @@
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\3-Infra.deps.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\3-Infra.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\3-Infra.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.csprojAssemblyReference.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.csproj.CoreCompileInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.AssemblyInfoInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.AssemblyInfo.cs
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.pdb

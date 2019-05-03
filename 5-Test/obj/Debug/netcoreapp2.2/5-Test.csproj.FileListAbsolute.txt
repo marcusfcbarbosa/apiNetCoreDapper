@@ -1,0 +1,14 @@
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\5-Test.deps.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\5-Test.runtimeconfig.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\5-Test.runtimeconfig.dev.json
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\5-Test.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\5-Test.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.csprojAssemblyReference.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.csproj.CoreCompileInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.AssemblyInfoInputs.cache
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.AssemblyInfo.cs
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.pdb
