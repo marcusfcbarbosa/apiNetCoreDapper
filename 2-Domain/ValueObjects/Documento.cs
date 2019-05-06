@@ -1,13 +1,14 @@
 using System;
 using _2_Domain.StoreContext.Enums;
+using Flunt.Notifications;
+using Flunt.Validations;
 
 namespace _2_Domain.ValueObjects
 {
-    public class Documento
+    public class Documento //: ValueObject
     {
-
         public Documento(string number, EnumDocumentType type){
-              switch (type)
+            switch (type)
             {
                 case EnumDocumentType.CNPJ:
                     
@@ -34,12 +35,9 @@ namespace _2_Domain.ValueObjects
             }
             Number = number;
             Type = type;
-            
         }
         public string Number { get; private set; }
         public EnumDocumentType Type { get; private set; }
-
-
         public bool IsCnpj(string cnpj)
         {
             int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };

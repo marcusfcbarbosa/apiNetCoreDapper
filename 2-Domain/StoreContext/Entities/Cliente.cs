@@ -18,7 +18,6 @@ namespace _2_Domain.StoreContext.Entities
             Email = email;
             Telefone = telefone;
             _enderecos = new List<Endereco>();
-            
         }
        
         public Nome Nome { get; private set; }
@@ -31,9 +30,8 @@ namespace _2_Domain.StoreContext.Entities
                 
                 this._enderecos.Add(endereco);
         }
-
         public override string ToString(){
-            return $"{Nome.PrimeiroNome}  {Nome.Sobrenome}";
+            return Nome.ToString();
         }
     }
 }

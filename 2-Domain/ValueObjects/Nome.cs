@@ -12,5 +12,9 @@ namespace _2_Domain.ValueObjects
         public String PrimeiroNome { get; private set; }
         public String Sobrenome { get; private set; }
         
+
+        public override string ToString(){
+            return $"{PrimeiroNome}  {Sobrenome}";
+        }
     }
 }

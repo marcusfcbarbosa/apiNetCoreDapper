@@ -5,4 +5,8 @@
     <RootNamespace>_2_Domain</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.3" />
+  </ItemGroup>
+
 </Project>

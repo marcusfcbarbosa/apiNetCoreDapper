@@ -25,8 +25,8 @@ namespace _2_Domain.StoreContext.Entities
         
         public IReadOnlyCollection<Entrega> Entregas =>_entregas.ToArray();
 
-        public void AdicionaPedidos(Pedido pedido){
-
+        public void AdicionaPedidos(ItemPedido itemPedido){
+                _itens.Add(itemPedido);
         }
         public void AdicionaEntrega(Entrega entrega){
                 _entregas.Add(entrega);
