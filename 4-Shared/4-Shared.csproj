@@ -5,4 +5,8 @@
     <RootNamespace>_4_Shared</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.3" />
+  </ItemGroup>
+
 </Project>

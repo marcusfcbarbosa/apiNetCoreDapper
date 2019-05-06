@@ -1,12 +1,18 @@
 using _2_Domain.StoreContext.Enums;
+using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Endereco
+    public class Endereco : Notifiable
     {
-        public Endereco(string rua,string numero,string complemento
-        ,string bairro,string cidade,string estado 
-        ,string pais,string cep, TipoEndereco tipoEndereco){
+        public Endereco(string rua,
+        string numero,
+        string complemento
+        ,string bairro,
+        string cidade,
+        string estado 
+        ,string pais,
+        string cep, TipoEndereco tipoEndereco){
                 Rua = rua;
                 Numero = numero;
                 Complemento = complemento;

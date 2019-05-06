@@ -1,16 +1,19 @@
 using System;
+using FluentValidator;
+
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Produto
+    public class Produto : Notifiable
     {
-        public Produto(string titulo, string descricao,string imagem,decimal preco,int qtd){
-                
+        public Produto(string titulo, string descricao,string imagem,decimal preco, int qtd){
                 Titulo = titulo;
                 Descricao = descricao;
                 Imagem = imagem;
                 Preco = preco;
-                Quantidade = qtd;
+                if(qtd> Quantidade){
+                    AddNotification("Quantidade","Produto indisponivel no estoque");
+                }
         }
         public String Titulo { get; private set; }
         public String Descricao { get; private set; }

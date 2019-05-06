@@ -1,9 +1,10 @@
 using System;
 using _2_Domain.StoreContext.Enums;
+using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Entrega
+    public class Entrega :Notifiable
     {
         public Entrega(DateTime dataEstimadaEntrega){
             DataCriacao= DateTime.Now;
@@ -13,5 +14,9 @@ namespace _2_Domain.StoreContext.Entities
         public DateTime DataCriacao { get;private set; } 
         public DateTime DataEstimadaEntrega { get; private set; } 
         public EntregaStatus  Status { get; private set; }
+
+        public void Enviado(){
+            Status=EntregaStatus.enviado;
+        }
     }
 }

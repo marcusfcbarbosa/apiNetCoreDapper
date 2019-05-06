@@ -1,36 +1,38 @@
 using System;
 using _2_Domain.StoreContext.Enums;
+using _4_Shared.ValudeObjects;
 using Flunt.Notifications;
 using Flunt.Validations;
 
 namespace _2_Domain.ValueObjects
 {
-    public class Documento //: ValueObject
+    public class Documento : ValueObject
     {
         public Documento(string number, EnumDocumentType type){
             switch (type)
             {
                 case EnumDocumentType.CNPJ:
                     
-                    // AddNotifications(new Contract()
-                    //         .Requires()
-                    //         .HasLen(number, 14, "Document.Number", "Cnpj deve possuir 14 caracteres")
-                    // );
-                    // AddNotifications(new Contract()
-                    //         .Requires()
-                    //         .IsTrue(IsCnpj(number), "Document.Number", "CNPJ Inválido")
-                    // );
+                    AddNotifications(new Contract()
+                            .Requires()
+                            .HasLen(number, 14, "Document.Number", "Cnpj deve possuir 14 caracteres")
+                    );
+                    AddNotifications(new Contract()
+                            .Requires()
+                            .IsTrue(IsCnpj(number), "Document.Number", "CNPJ Inválido")
+                    );
                     break;
 
                 case EnumDocumentType.CPF:
-                    // AddNotifications(new Contract()
-                    //         .Requires()
-                    //         .HasLen(number, 11, "Document.Number", "CPF deve possuir 11 caracteres")
-                    // );
-                    // AddNotifications(new Contract()
-                    //         .Requires()
-                    //         .IsTrue(IsCpf(number), "Document.Number", "CPF Inválido")
-                    // );
+                
+                    AddNotifications(new Contract()
+                            .Requires()
+                            .HasLen(number, 11, "Document.Number", "CPF deve possuir 11 caracteres")
+                    );
+                    AddNotifications(new Contract()
+                            .Requires()
+                            .IsTrue(IsCpf(number), "Document.Number", "CPF Inválido")
+                    );
                     break;
             }
             Number = number;

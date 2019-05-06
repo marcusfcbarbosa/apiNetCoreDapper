@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Flunt/1.0.3": {
         "type": "package",
         "compile": {
@@ -34,10 +46,35 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "4-Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Flunt": "1.0.3"
+        },
+        "compile": {
+          "bin/placeholder/4-Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/4-Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
+      ]
+    },
     "Flunt/1.0.3": {
       "sha512": "7/wzY8uowlaM5Xydj428PdF1yp1bfuSEm5ONqnx4xiEbPv/zfGLNQoJQVNzU7cqmt3MmvJEGrCCEg7T1NHFdmA==",
       "type": "package",
@@ -192,11 +229,18 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "4-Shared/1.0.0": {
+      "type": "project",
+      "path": "../4-Shared/4-Shared.csproj",
+      "msbuildProject": "../4-Shared/4-Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Flunt",
+      "4-Shared >= 1.0.0",
+      "FluentValidator >= 2.0.2",
+      "Flunt >= 1.0.3",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -229,7 +273,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
+              "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -241,9 +289,13 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "FluentValidator": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Flunt": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[1.0.3, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

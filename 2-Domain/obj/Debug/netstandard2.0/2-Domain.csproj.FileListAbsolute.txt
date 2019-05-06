@@ -7,3 +7,6 @@ C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\obj\Debug\netstand
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\obj\Debug\netstandard2.0\2-Domain.AssemblyInfo.cs
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\obj\Debug\netstandard2.0\2-Domain.dll
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\obj\Debug\netstandard2.0\2-Domain.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\bin\Debug\netstandard2.0\4-Shared.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\bin\Debug\netstandard2.0\4-Shared.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\2-Domain\obj\Debug\netstandard2.0\2-Domain.csproj.CopyComplete

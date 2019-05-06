@@ -2,10 +2,11 @@ using System;
 using System.Linq;
 using _2_Domain.ValueObjects;
 using System.Collections.Generic;
+using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Cliente
+    public class Cliente :Notifiable
     {
         private readonly IList<Endereco> _enderecos;
         public Cliente(Nome nome,

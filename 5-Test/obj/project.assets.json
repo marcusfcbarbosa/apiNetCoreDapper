@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
+      "Flunt/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.0.1": {
         "type": "package",
         "compile": {
@@ -1623,16 +1644,58 @@
       "2-Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "4-Shared": "1.0.0",
+          "FluentValidator": "2.0.2",
+          "Flunt": "1.0.3"
+        },
         "compile": {
           "bin/placeholder/2-Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/2-Domain.dll": {}
         }
+      },
+      "4-Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Flunt": "1.0.3"
+        },
+        "compile": {
+          "bin/placeholder/4-Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/4-Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
+      ]
+    },
+    "Flunt/1.0.3": {
+      "sha512": "7/wzY8uowlaM5Xydj428PdF1yp1bfuSEm5ONqnx4xiEbPv/zfGLNQoJQVNzU7cqmt3MmvJEGrCCEg7T1NHFdmA==",
+      "type": "package",
+      "path": "flunt/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.1.0.3.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
     "Microsoft.CodeCoverage/16.0.1": {
       "sha512": "W7WI3iH6At2I/9x2ODgCIIMO0QfpA7ZCoHkeygMLAaz3Nms/GsugKz9N4hkTve2Lj66g2K4CAmbwe6utEH66lw==",
       "type": "package",
@@ -5828,11 +5891,18 @@
       "type": "project",
       "path": "../2-Domain/2-Domain.csproj",
       "msbuildProject": "../2-Domain/2-Domain.csproj"
+    },
+    "4-Shared/1.0.0": {
+      "type": "project",
+      "path": "../4-Shared/4-Shared.csproj",
+      "msbuildProject": "../4-Shared/4-Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "2-Domain >= 1.0.0",
+      "FluentValidator >= 2.0.2",
+      "Flunt >= 1.0.3",
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
@@ -5884,6 +5954,14 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "FluentValidator": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
+          "Flunt": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "MSTest.TestAdapter": {
             "target": "Package",
             "version": "[1.4.0, )"

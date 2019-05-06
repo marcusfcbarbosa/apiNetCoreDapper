@@ -1,8 +1,9 @@
 using System;
+using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class ItemPedido
+    public class ItemPedido :Notifiable
     {
         public ItemPedido(Produto produto,int qtd){
             Produto = produto;

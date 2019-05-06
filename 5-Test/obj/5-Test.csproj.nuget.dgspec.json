@@ -29,6 +29,70 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
+                "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "FluentValidator": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj",
+        "projectName": "4-Shared",
+        "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj",
+        "packagesPath": "C:\\Users\\marcus.barbosa.ext\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marcus.barbosa.ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
             "projectReferences": {}
           }
         },
@@ -41,6 +105,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -97,6 +165,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "FluentValidator": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Flunt": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[1.4.0, )"

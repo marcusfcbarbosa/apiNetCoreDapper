@@ -1,8 +1,10 @@
 using System;
+using _4_Shared.ValudeObjects;
+
 
 namespace _2_Domain.ValueObjects
 {
-    public class Nome
+    public class Nome : ValueObject
     {
         public Nome(string primeiroNome, string sobrenome){
                 PrimeiroNome = primeiroNome;
