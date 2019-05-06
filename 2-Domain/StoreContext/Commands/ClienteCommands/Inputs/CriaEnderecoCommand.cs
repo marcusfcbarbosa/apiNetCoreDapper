@@ -2,6 +2,7 @@ using System;
 using _4_Shared.Commands;
 using _4_Shared.Enum;
 using FluentValidator;
+using FluentValidator.Validation;
 
 namespace _2_Domain.StoreContext.Commands.ClienteCommands.Inputs
 {
@@ -20,7 +21,30 @@ namespace _2_Domain.StoreContext.Commands.ClienteCommands.Inputs
 
         public bool Valid()
         {
-            throw new NotImplementedException();
+
+         AddNotifications(new ValidationContract()
+                    .Requires()
+                    .HasLen(Id.ToString(),36, "ClienteId","Identificador de cliente inválido")
+                    .IsNotNull(Rua,"Rua","Rua é obrigatório")
+                    .IsNotNull(Numero,"Numero","Numero é obrigatório")
+                    .IsNotNull(Complemento,"Complemento","Complemento é obrigatório")
+                    .IsNotNull(Bairro,"Bairro","Bairro é obrigatório")
+                    .IsNotNull(Cidade,"Cidade","Cidade é obrigatório")
+                    .IsNotNull(Estado,"Estado","Estado é obrigatório")
+                    .IsNotNull(Pais,"Pais","Pais é obrigatório")
+                    .IsTrue(ValidaCep(Cep),"Cep","Formato de CEP inválido")
+                );
+            return Valid();
+        }
+
+        public static bool ValidaCep(string cep)
+        {
+            if (cep.Length == 8)
+            {
+                cep = cep.Substring(0, 5) + "-" + cep.Substring(5, 3);
+                //txt.Text = cep;
+            }
+            return System.Text.RegularExpressions.Regex.IsMatch(cep, ("[0-9]{5}-[0-9]{3}"));
         }
     }
 }
