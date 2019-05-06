@@ -1,4 +1,3 @@
-
 using _2_Domain.StoreContext.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Flunt.Notifications;
@@ -18,6 +17,5 @@ namespace _5_Test.ValueObjects
             var email = new Email("marcus@teste.com.br");
             Assert.IsTrue(email.IsValid);            
         }
-        
     }
 }

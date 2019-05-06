@@ -8,7 +8,6 @@ using _4_Shared.Enum;
 
 namespace _5_Test.Entities
 {
-    
     public class PedidosTestes
     {
         [TestMethod]
