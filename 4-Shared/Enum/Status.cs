@@ -10,7 +10,7 @@ namespace _4_Shared.Enum
         Cancelado =4
     }
 
-    public enum EntregaStatus : byte{
+    public enum EntregaStatus : byte {
         aguardandoEnvio =0,
         enviado=1,
         entregue=2,
