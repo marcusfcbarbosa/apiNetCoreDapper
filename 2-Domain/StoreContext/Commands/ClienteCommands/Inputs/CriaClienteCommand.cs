@@ -14,7 +14,6 @@ namespace _2_Domain.StoreContext.Commands.ClienteCommands.Inputs
         public String Telefone { get;  set; }
 
         public bool Valid(){
-
                 AddNotifications(new ValidationContract()
                     .Requires()
                     .IsNotNull(Telefone,"CriaClienteCommand.Telefone","Telefone é obrigatório")
