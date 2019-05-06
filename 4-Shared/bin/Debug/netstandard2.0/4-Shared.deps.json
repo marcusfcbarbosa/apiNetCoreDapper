@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "6d9ff21e99ff4ecdfefa8cb7f72525823905096f"
+    "signature": "b00cbfd49b4f3f65d7e395ab1e99b6684d64ff4e"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,11 +9,23 @@
     ".NETStandard,Version=v2.0/": {
       "4-Shared/1.0.0": {
         "dependencies": {
+          "FluentValidator": "2.0.2",
           "Flunt": "1.0.3",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "4-Shared.dll": {}
+        }
+      },
+      "FluentValidator/2.0.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.0"
+          }
         }
       },
       "Flunt/1.0.3": {
@@ -37,6 +49,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidator/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "path": "fluentvalidator/2.0.2",
+      "hashPath": "fluentvalidator.2.0.2.nupkg.sha512"
     },
     "Flunt/1.0.3": {
       "type": "package",

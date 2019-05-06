@@ -1,10 +1,10 @@
 using System;
-using _2_Domain.StoreContext.Enums;
+using _4_Shared.Enum;
 using _4_Shared.ValudeObjects;
 using FluentValidator;
 using FluentValidator.Validation;
 
-namespace _2_Domain.ValueObjects
+namespace _4_Shared.ValudeObjects
 {
     public class Documento  : Notifiable
     {

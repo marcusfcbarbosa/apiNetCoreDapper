@@ -1660,6 +1660,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "FluentValidator": "2.0.2",
           "Flunt": "1.0.3"
         },
         "compile": {

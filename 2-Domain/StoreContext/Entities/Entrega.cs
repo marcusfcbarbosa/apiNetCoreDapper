@@ -1,5 +1,5 @@
 using System;
-using _2_Domain.StoreContext.Enums;
+using _4_Shared.Enum;
 using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities

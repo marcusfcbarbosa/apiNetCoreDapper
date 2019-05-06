@@ -1,10 +1,10 @@
 using _2_Domain.StoreContext.Entities;
-using _2_Domain.StoreContext.Enums;
-using _2_Domain.ValueObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Flunt.Notifications;
 using Flunt.Specifications;
 using FluentValidator;
+using _4_Shared.ValudeObjects;
+using _4_Shared.Enum;
 
 namespace _5_Test
 {

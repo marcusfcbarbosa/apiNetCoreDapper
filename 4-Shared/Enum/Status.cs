@@ -1,6 +1,6 @@
 using System;
 
-namespace _2_Domain.StoreContext.Enums
+namespace _4_Shared.Enum
 {
     public enum StatusPedido : byte
     {
