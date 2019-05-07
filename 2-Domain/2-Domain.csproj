@@ -6,12 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.9" />
     <PackageReference Include="FluentValidator" Version="2.0.2" />
     <PackageReference Include="Flunt" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\4-Shared\4-Shared.csproj" />
+    <ProjectReference Include="..\3-Infra\3-Infra.csproj" />
   </ItemGroup>
 
 </Project>

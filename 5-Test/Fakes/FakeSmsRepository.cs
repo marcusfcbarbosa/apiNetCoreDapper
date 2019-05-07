@@ -7,7 +7,7 @@ namespace _5_Test.Fakes
     {
         public void EnviaEmail(string para, string de, string assunto, string mensagem)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

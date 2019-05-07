@@ -24,7 +24,7 @@ namespace _5_Test.Handlers
         }
 
         [TestMethod]
-        public void Teste()
+        public void ValidaCommandCriarCliente()
         {
             var command = new CriaClienteCommand();
             command.PrimeiroNome = "Marcus";
@@ -36,7 +36,10 @@ namespace _5_Test.Handlers
             //mockando os repositórios
             var handler = new ClienteHandler(new FakeClienteRepository(), new FakeSmsRepository());
 
-            handler.Handle(command);
+            var result =  handler.Handle(command);
+
+            Assert.AreNotEqual(null,result);
+            Assert.IsTrue(handler.IsValid);
         }
     }
 }

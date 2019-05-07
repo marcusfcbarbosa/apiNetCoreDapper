@@ -9,6 +9,5 @@ namespace _4_Shared.Entities
             Id = Guid.NewGuid();
         }
         public Guid Id { get; set; }
-
     }
 }

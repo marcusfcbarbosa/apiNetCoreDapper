@@ -5,20 +5,20 @@ namespace _5_Test.Fakes
 {
     public class FakeClienteRepository : IClienteRepository
     {
-        
+
         public bool CheckaDocumento(string documento)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public bool checkaEmail(string email)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public void Save(Cliente cliente)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

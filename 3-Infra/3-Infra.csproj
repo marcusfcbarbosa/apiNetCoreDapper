@@ -5,4 +5,12 @@
     <RootNamespace>_3_Infra</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\4-Shared\4-Shared.csproj" />
+  </ItemGroup>
+
 </Project>
