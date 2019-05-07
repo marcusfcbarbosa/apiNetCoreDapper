@@ -30,14 +30,14 @@ namespace _2_Domain.StoreContext.Handlers
             //Verifica se CPF ja existe
             if(_clienteRepository.CheckaDocumento(command.Documento)){
                 AddNotification("Documento","Este CPF ja esta em uso");
-                return null;
-            }
-
-            if(_clienteRepository.checkaEmail(command.Email)){
-                AddNotification("Email","Este Email ja esta em uso");
-                return null;
+                
             }
             //verifica se email ja existe
+            if(_clienteRepository.checkaEmail(command.Email)){
+                AddNotification("Email","Este Email ja esta em uso");
+                
+            }
+            
             //cria as vo´s
             var nome = new Nome(command.PrimeiroNome, command.Sobrenome);
             var documento = new Documento(command.Documento,EnumDocumentType.CPF);
@@ -57,6 +57,7 @@ namespace _2_Domain.StoreContext.Handlers
 
             _clienteRepository.Save(cliente);
             //envia convite no slack
+            
             //envia email de boas vindas
             _emailService.EnviaEmail(email.Address, "teste@teste.com","Bem vindo", "seja Bem vindo");
             //retornar resultado para tela

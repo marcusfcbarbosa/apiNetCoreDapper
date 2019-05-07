@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _2_Domain.StoreContext.Repositories;
+using _2_Domain.StoreContext.Repositories.Interfaces;
+using _2_Domain.StoreContext.Services;
+using _2_Domain.StoreContext.Services.Interfaces;
+using _3_Infra.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,8 +20,19 @@ namespace _1_Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            
             services.AddMvc();
+            RegistrandoDependencias(services);
+            
+
+        }
+
+        public void RegistrandoDependencias(IServiceCollection services){
+            
+            //AddScoped = verifica se tem algum aberto em meória e usa  
+            services.AddScoped<Store_Context,Store_Context>();
+
+            services.AddTransient<IClienteRepository,ClienteRepository>();
+            services.AddTransient<IEmailService,EmailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -11,6 +11,7 @@ namespace _1_Api.Controllers
     public class ClienteController : Controller
     {
 
+        
         [HttpGet]
         public IActionResult Get(){
 
