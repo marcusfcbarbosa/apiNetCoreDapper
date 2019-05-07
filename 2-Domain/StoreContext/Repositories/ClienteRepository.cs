@@ -5,6 +5,7 @@ using _2_Domain.StoreContext.Entities;
 using _2_Domain.StoreContext.Repositories.Interfaces;
 using _3_Infra.Context;
 using Dapper;
+using _2_Domain.StoreContext.Queries;
 
 namespace _2_Domain.StoreContext.Repositories
 {
@@ -17,7 +18,7 @@ namespace _2_Domain.StoreContext.Repositories
 
         public bool CheckaDocumento(string documento)
         {
-            return   _context.
+               return   _context.
                         Connection
                         .Query<bool>("spCheckDocument",new { Documento = documento },
                         commandType: CommandType.StoredProcedure).FirstOrDefault();
@@ -29,6 +30,14 @@ namespace _2_Domain.StoreContext.Repositories
                         Connection
                         .Query<bool>("spCheckEmail",
                         new { Email = email },
+                        commandType: CommandType.StoredProcedure).FirstOrDefault();
+        }
+
+        public ContadorPedidosCliente RetornaPedidosCliente(string documento)
+        {
+             return   _context.
+                        Connection
+                        .Query<ContadorPedidosCliente>("spGetCustomerOrdersCount",new { Documento = documento },
                         commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 

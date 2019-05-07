@@ -1,4 +1,5 @@
 using _2_Domain.StoreContext.Entities;
+using _2_Domain.StoreContext.Queries;
 
 namespace _2_Domain.StoreContext.Repositories.Interfaces
 {
@@ -7,5 +8,8 @@ namespace _2_Domain.StoreContext.Repositories.Interfaces
          bool CheckaDocumento(string documento);
          bool checkaEmail(string email);
          void Save(Cliente cliente);
+
+         ContadorPedidosCliente RetornaPedidosCliente(string documento);
+         
     }
 }
