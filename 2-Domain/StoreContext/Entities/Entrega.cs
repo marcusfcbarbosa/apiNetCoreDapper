@@ -8,7 +8,7 @@ namespace _2_Domain.StoreContext.Entities
     {
         public Entrega(DateTime dataEstimadaEntrega){
             DataCriacao= DateTime.Now;
-             DataEstimadaEntrega =dataEstimadaEntrega;
+            DataEstimadaEntrega =dataEstimadaEntrega;
             Status=EntregaStatus.aguardandoEnvio;
         }
         public DateTime DataCriacao { get;private set; } 

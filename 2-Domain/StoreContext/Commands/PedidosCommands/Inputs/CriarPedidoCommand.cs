@@ -8,14 +8,11 @@ namespace _2_Domain.StoreContext.Commands.PedidosCommands.Inputs
 {
     public class CriarPedidoCommand  : Notifiable,  ICommand
     {
-
         public CriarPedidoCommand(){
             ItensPedido = new List<PedidoItemCommand>();
         }
-
         public Guid ClienteId { get; set; }
         public IList<PedidoItemCommand> ItensPedido { get; set; }
-
         public bool Valid()
         {
             AddNotifications(new ValidationContract()
