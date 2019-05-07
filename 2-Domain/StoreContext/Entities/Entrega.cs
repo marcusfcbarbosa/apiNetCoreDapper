@@ -1,10 +1,11 @@
 using System;
+using _4_Shared.Entities;
 using _4_Shared.Enum;
 using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Entrega :Notifiable
+    public class Entrega : Entity
     {
         public Entrega(DateTime dataEstimadaEntrega){
             DataCriacao= DateTime.Now;

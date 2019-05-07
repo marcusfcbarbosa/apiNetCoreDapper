@@ -1,4 +1,4 @@
-namespace _2_Domain.StoreContext.Services
+namespace _2_Domain.StoreContext.Services.Interfaces
 {
     public interface IEmailService
     {

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Collections.Generic;
 using FluentValidator;
 using _4_Shared.ValudeObjects;
+using _4_Shared.Entities;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Cliente : Notifiable
+    public class Cliente : Entity
     {
         private readonly IList<Endereco> _enderecos;
         public Cliente(Nome nome,

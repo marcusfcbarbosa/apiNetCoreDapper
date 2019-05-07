@@ -1,9 +1,10 @@
+using _4_Shared.Entities;
 using _4_Shared.Enum;
 using FluentValidator;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Endereco : Notifiable
+    public class Endereco : Entity
     {
         public Endereco(string rua
         ,string numero

@@ -3,10 +3,11 @@ using System.Linq;
 using System.Collections.Generic;
 using FluentValidator;
 using _4_Shared.Enum;
+using _4_Shared.Entities;
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Pedido : Notifiable
+    public class Pedido : Entity
     {
         private readonly IList<Entrega> _entregas;
         private readonly IList<ItemPedido> _itens;

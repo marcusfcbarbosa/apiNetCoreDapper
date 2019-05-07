@@ -1,10 +1,11 @@
 using System;
+using _4_Shared.Entities;
 using FluentValidator;
 
 
 namespace _2_Domain.StoreContext.Entities
 {
-    public class Produto : Notifiable
+    public class Produto : Entity
     {
         public Produto(string titulo, string descricao,string imagem,decimal preco, int qtd){
                 Titulo = titulo;

@@ -1,6 +1,6 @@
 using _2_Domain.StoreContext.Entities;
 
-namespace _2_Domain.StoreContext.Repositories
+namespace _2_Domain.StoreContext.Repositories.Interfaces
 {
     public interface IClienteRepository
     {
