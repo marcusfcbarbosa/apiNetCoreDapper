@@ -9,6 +9,5 @@ namespace _1_Api.Controllers
 
             return "Hello";
         }
-        
-    }
+   }
 }

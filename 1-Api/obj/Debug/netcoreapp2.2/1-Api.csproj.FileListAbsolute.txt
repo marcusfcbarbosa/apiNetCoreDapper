@@ -12,3 +12,10 @@ C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.RazorTargetAssemblyInfo.cache
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.dll
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\2-Domain.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\3-Infra.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\4-Shared.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\2-Domain.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\4-Shared.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\bin\Debug\netcoreapp2.2\3-Infra.pdb
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\1-Api\obj\Debug\netcoreapp2.2\1-Api.csproj.CopyComplete
