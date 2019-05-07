@@ -32,12 +32,11 @@ namespace _2_Domain.StoreContext.Handlers
                 AddNotification("Documento","Este CPF ja esta em uso");
                 return null;
             }
-            
+
             if(_clienteRepository.checkaEmail(command.Email)){
                 AddNotification("Email","Este Email ja esta em uso");
                 return null;
             }
-
             //verifica se email ja existe
             //cria as vo´s
             var nome = new Nome(command.PrimeiroNome, command.Sobrenome);
@@ -51,6 +50,7 @@ namespace _2_Domain.StoreContext.Handlers
             AddNotifications(documento.Notifications);
             AddNotifications(email.Notifications);
             AddNotifications(cliente.Notifications);
+
             if(Invalid)
                 return null;
             //inserir cliente no banco
