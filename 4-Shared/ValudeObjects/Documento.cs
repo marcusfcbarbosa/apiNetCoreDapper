@@ -75,7 +75,7 @@ namespace _4_Shared.ValudeObjects
             return cnpj.EndsWith(digito);
         }
 
-public bool IsCpf(string cpf)
+        public bool IsCpf(string cpf)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -110,6 +110,5 @@ public bool IsCpf(string cpf)
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
         }
-
     }
 }
