@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using Elmah.Io.AspNetCore;
+using System;
 
 namespace _1_Api
 {
@@ -28,7 +30,6 @@ namespace _1_Api
                 options.DescribeAllEnumsAsStrings();
 	            options.DescribeAllParametersInCamelCase();
                 options.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
-                
             });
         }
 
@@ -42,9 +43,12 @@ namespace _1_Api
 
             //Handlers
             services.AddTransient<ClienteHandler,ClienteHandler>();
+            //Elmah
+         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        [Obsolete]
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -61,7 +65,8 @@ namespace _1_Api
             app.UseMvc();
             //Habilitando a compressao de dados de todas as requisições
             app.UseResponseCompression();
-            
+            //No momento da publicação ira exibir no elmah
+            app.UseElmahIo("APIKEY", new Guid("LOG_ID"));
         }
     }
 }
