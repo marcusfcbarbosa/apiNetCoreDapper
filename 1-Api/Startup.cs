@@ -25,6 +25,9 @@ namespace _1_Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            //Habilitando a compressao de dados de todas as requisições
+            services.AddResponseCompression();
+
             RegistrandoDependencias(services);
         }
 
@@ -47,8 +50,10 @@ namespace _1_Api
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseMvc();
+            //Habilitando a compressao de dados de todas as requisições
+            app.UseResponseCompression();
             // app.Run(async (context) =>
             // {
             //     await context.Response.WriteAsync("Hello World!");
