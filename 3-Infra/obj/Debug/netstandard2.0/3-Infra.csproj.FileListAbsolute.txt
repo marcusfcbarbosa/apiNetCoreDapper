@@ -10,3 +10,5 @@ C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstanda
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\4-Shared.dll
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\4-Shared.pdb
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\obj\Debug\netstandard2.0\3-Infra.csproj.CopyComplete
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\2-Domain.dll
+C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\3-Infra\bin\Debug\netstandard2.0\2-Domain.pdb

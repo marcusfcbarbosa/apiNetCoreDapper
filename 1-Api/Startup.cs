@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _2_Domain.StoreContext.Handlers;
 using _2_Domain.StoreContext.Repositories;
 using _2_Domain.StoreContext.Repositories.Interfaces;
 using _2_Domain.StoreContext.Services;
 using _2_Domain.StoreContext.Services.Interfaces;
 using _3_Infra.Context;
+using _3_Infra.Repository;
+using _3_Infra.Repository;
+using _3_Infra.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -22,8 +26,6 @@ namespace _1_Api
         {
             services.AddMvc();
             RegistrandoDependencias(services);
-            
-
         }
 
         public void RegistrandoDependencias(IServiceCollection services){
@@ -33,6 +35,9 @@ namespace _1_Api
 
             services.AddTransient<IClienteRepository,ClienteRepository>();
             services.AddTransient<IEmailService,EmailService>();
+
+            //Handlers
+            services.AddTransient<ClienteHandler,ClienteHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

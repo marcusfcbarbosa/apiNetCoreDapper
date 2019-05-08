@@ -4474,7 +4474,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "3-Infra": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9",
           "FluentValidator": "2.0.2",
@@ -4491,6 +4490,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "2-Domain": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9"
         },
@@ -12226,6 +12226,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "2-Domain >= 1.0.0",
+      "3-Infra >= 1.0.0",
       "4-Shared >= 1.0.0",
       "FluentValidator >= 2.0.2",
       "Microsoft.AspNetCore >= 2.2.0",
@@ -12266,6 +12267,9 @@
           "projectReferences": {
             "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj": {
               "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj"
+            },
+            "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj": {
+              "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj"
             },
             "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
               "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"

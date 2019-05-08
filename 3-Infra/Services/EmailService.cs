@@ -1,6 +1,6 @@
 using _2_Domain.StoreContext.Services.Interfaces;
 
-namespace _2_Domain.StoreContext.Services
+namespace _3_Infra.Services
 {
     public class EmailService : IEmailService
     {

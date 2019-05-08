@@ -1,6 +1,10 @@
 using System;
 using _2_Domain.StoreContext.Commands.ClienteCommands.Inputs;
+using _2_Domain.StoreContext.Commands.ClienteCommands.Outputs;
 using _2_Domain.StoreContext.Entities;
+using _2_Domain.StoreContext.Handlers;
+using _2_Domain.StoreContext.Queries;
+using _2_Domain.StoreContext.Repositories.Interfaces;
 using _4_Shared.Enum;
 using _4_Shared.ValudeObjects;
 using Microsoft.AspNetCore.Mvc;
@@ -10,19 +14,24 @@ namespace _1_Api.Controllers
     [Route("clientes")]
     public class ClienteController : Controller
     {
-
-        
+        private readonly IClienteRepository _clienteRepository;
+        private readonly ClienteHandler _handler;
+        public ClienteController(IClienteRepository clienteRepository,
+                                 ClienteHandler handler){
+                _clienteRepository = clienteRepository;
+                _handler =handler;
+        }
+       
         [HttpGet]
         public IActionResult Get(){
-
-            return Ok();
+            return Ok(_clienteRepository.Get());
         }
 
         [HttpGet]
         [Route("{id:Guid}")]
         public IActionResult GetById(Guid id){
 
-            return Ok();
+            return Ok(_clienteRepository.GetById(id));
         }
 
         [HttpDelete]
@@ -43,16 +52,11 @@ namespace _1_Api.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]CriaClienteCommand  command){
             
-            var nome= new Nome(command.PrimeiroNome,command.Sobrenome);
-            var documento = new Documento(command.Documento,EnumDocumentType.CPF);
-            var email = new Email(command.Email);
-            var _cliente = new Cliente(nome,documento,email,command.Telefone);
+            var result  = (CriarClienteCommandResult)_handler.Handle(command);
+            if(_handler.Invalid)
+                return BadRequest(_handler.Notifications);            
 
-            var   _mouse = new Produto("mouse","mouse","_mouse",15,2);
-            var   _teclado = new Produto("_teclado","_teclado","_teclado",15,2);
-            var   _monitor = new Produto("_monitor","_monitor","_monitor",15,2);
-
-            return Ok();
+            return Ok(result);
         }
 
         [HttpPut]

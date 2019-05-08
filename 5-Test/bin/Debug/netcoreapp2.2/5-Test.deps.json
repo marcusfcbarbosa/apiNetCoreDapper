@@ -1153,7 +1153,6 @@
       },
       "2-Domain/1.0.0": {
         "dependencies": {
-          "3-Infra": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9",
           "FluentValidator": "2.0.2",
@@ -1161,15 +1160,6 @@
         },
         "runtime": {
           "2-Domain.dll": {}
-        }
-      },
-      "3-Infra/1.0.0": {
-        "dependencies": {
-          "4-Shared": "1.0.0",
-          "Dapper": "1.60.9"
-        },
-        "runtime": {
-          "3-Infra.dll": {}
         }
       },
       "4-Shared/1.0.0": {
@@ -1764,11 +1754,6 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "2-Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "3-Infra/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

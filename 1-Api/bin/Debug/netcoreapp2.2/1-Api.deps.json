@@ -25,6 +25,7 @@
       "1-Api/1.0.0": {
         "dependencies": {
           "2-Domain": "1.0.0",
+          "3-Infra": "1.0.0",
           "4-Shared": "1.0.0",
           "FluentValidator": "2.0.2",
           "Microsoft.AspNetCore": "2.2.0",
@@ -83,7 +84,6 @@
       "System.Reflection.TypeExtensions/4.4.0": {},
       "2-Domain/1.0.0": {
         "dependencies": {
-          "3-Infra": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9",
           "FluentValidator": "2.0.2",
@@ -98,6 +98,7 @@
       },
       "3-Infra/1.0.0": {
         "dependencies": {
+          "2-Domain": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9"
         },

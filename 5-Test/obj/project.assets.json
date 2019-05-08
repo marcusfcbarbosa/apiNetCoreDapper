@@ -1781,7 +1781,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "3-Infra": "1.0.0",
           "4-Shared": "1.0.0",
           "Dapper": "1.60.9",
           "FluentValidator": "2.0.2",
@@ -1792,20 +1791,6 @@
         },
         "runtime": {
           "bin/placeholder/2-Domain.dll": {}
-        }
-      },
-      "3-Infra/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "4-Shared": "1.0.0",
-          "Dapper": "1.60.9"
-        },
-        "compile": {
-          "bin/placeholder/3-Infra.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/3-Infra.dll": {}
         }
       },
       "4-Shared/1.0.0": {
@@ -6400,11 +6385,6 @@
       "type": "project",
       "path": "../2-Domain/2-Domain.csproj",
       "msbuildProject": "../2-Domain/2-Domain.csproj"
-    },
-    "3-Infra/1.0.0": {
-      "type": "project",
-      "path": "../3-Infra/3-Infra.csproj",
-      "msbuildProject": "../3-Infra/3-Infra.csproj"
     },
     "4-Shared/1.0.0": {
       "type": "project",

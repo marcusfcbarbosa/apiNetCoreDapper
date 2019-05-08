@@ -6,8 +6,9 @@ using _2_Domain.StoreContext.Repositories.Interfaces;
 using _3_Infra.Context;
 using Dapper;
 using _2_Domain.StoreContext.Queries;
+using System.Collections.Generic;
 
-namespace _2_Domain.StoreContext.Repositories
+namespace _3_Infra.Repository
 {
     public class ClienteRepository :  IClienteRepository
     {
@@ -31,6 +32,24 @@ namespace _2_Domain.StoreContext.Repositories
                         .Query<bool>("spCheckEmail",
                         new { Email = email },
                         commandType: CommandType.StoredProcedure).FirstOrDefault();
+        }
+
+        public IEnumerable<ListaClientesQueryResults> Get()
+        {
+                return  _context.
+                        Connection
+                        .Query<ListaClientesQueryResults>("spListaClientesQueryResults",
+                        null,
+                        commandType: CommandType.StoredProcedure).ToList();
+        }
+
+        public ClientesQueryResults GetById(Guid id)
+        {
+            return  _context.
+                    Connection
+                    .Query<ClientesQueryResults>("spListaClientesQueryResults",
+                    null,
+                    commandType: CommandType.StoredProcedure).FirstOrDefault();
         }
 
         public ContadorPedidosCliente RetornaPedidosCliente(string documento)

@@ -17,5 +17,3 @@ C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\obj\Debug\netcoreapp2.2\5-Test.csproj.CopyComplete
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\4-Shared.dll
 C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\4-Shared.pdb
-C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\3-Infra.dll
-C:\Users\marcus.barbosa.ext\Desktop\apiNetCoreDapper\5-Test\bin\Debug\netcoreapp2.2\3-Infra.pdb

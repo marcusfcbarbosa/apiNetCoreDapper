@@ -366,6 +366,22 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "2-Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "4-Shared": "1.0.0",
+          "Dapper": "1.60.9",
+          "FluentValidator": "2.0.2",
+          "Flunt": "1.0.3"
+        },
+        "compile": {
+          "bin/placeholder/2-Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/2-Domain.dll": {}
+        }
+      },
       "4-Shared/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1628,6 +1644,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "2-Domain/1.0.0": {
+      "type": "project",
+      "path": "../2-Domain/2-Domain.csproj",
+      "msbuildProject": "../2-Domain/2-Domain.csproj"
+    },
     "4-Shared/1.0.0": {
       "type": "project",
       "path": "../4-Shared/4-Shared.csproj",
@@ -1636,6 +1657,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "2-Domain >= 1.0.0",
       "4-Shared >= 1.0.0",
       "Dapper >= 1.60.9",
       "NETStandard.Library >= 2.0.3"
@@ -1671,6 +1693,9 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
+            "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj": {
+              "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj"
+            },
             "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
               "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
             }

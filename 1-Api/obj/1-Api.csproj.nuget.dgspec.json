@@ -33,6 +33,9 @@
               "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj": {
                 "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj"
               },
+              "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj": {
+                "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj"
+              },
               "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
                 "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
               }
@@ -108,9 +111,6 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj": {
-                "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\3-Infra\\3-Infra.csproj"
-              },
               "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
                 "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
               }
@@ -179,6 +179,9 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
+              "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj": {
+                "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\2-Domain\\2-Domain.csproj"
+              },
               "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj": {
                 "projectPath": "C:\\Users\\marcus.barbosa.ext\\Desktop\\apiNetCoreDapper\\4-Shared\\4-Shared.csproj"
               }
