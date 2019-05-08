@@ -1,4 +1,5 @@
-﻿using _2_Domain.StoreContext.Handlers;
+﻿using System.IO;
+using _2_Domain.StoreContext.Handlers;
 using _2_Domain.StoreContext.Repositories.Interfaces;
 using _2_Domain.StoreContext.Services.Interfaces;
 using _3_Infra.Context;
@@ -7,6 +8,7 @@ using _3_Infra.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace _1_Api
 {
@@ -20,6 +22,14 @@ namespace _1_Api
             //Habilitando a compressao de dados de todas as requisições
             services.AddResponseCompression();
             RegistrandoDependencias(services);
+            //adicionando a documentação dos endpoints
+            services.AddSwaggerGen(options =>
+            {
+                options.DescribeAllEnumsAsStrings();
+	            options.DescribeAllParametersInCamelCase();
+                options.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                
+            });
         }
 
         public void RegistrandoDependencias(IServiceCollection services){
@@ -41,10 +51,17 @@ namespace _1_Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            //Swagger
+            app.UseSwagger();
+            //Swagger em formato json
+            app.UseSwaggerUI(c =>
+	        {
+	        	c.SwaggerEndpoint("/swagger/v1/swagger.json", "My First Swagger");
+	        });
             app.UseMvc();
             //Habilitando a compressao de dados de todas as requisições
             app.UseResponseCompression();
+            
         }
     }
 }
