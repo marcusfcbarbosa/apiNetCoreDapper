@@ -11,7 +11,7 @@ namespace _2_Domain.StoreContext.Entities
         ,string complemento
         ,string bairro
         ,string cidade
-        ,string estado 
+        ,string estado
         ,string pais
         ,string cep
         ,TipoEndereco tipoEndereco){

@@ -11,15 +11,31 @@ using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using Elmah.Io.AspNetCore;
 using System;
+using Microsoft.Extensions.Configuration;
+using _4_Shared;
 
 namespace _1_Api
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+     
+        public static IConfiguration Configuration { get;set; }
+        public object Direc { get; private set; }
+
         public void ConfigureServices(IServiceCollection services)
         {
+
+            var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
+            Configuration = builder.Build();
+
+            ///dai para ter acesso a qualquer chave que esta no json do appSettings
+            Settings.ConnectionStrings =Configuration["ConnectionStrings"];
+
+            //Para poder publicar dentro de uma aplicação Azure (olhar depois)
+            //services.addApplicationInsightsTelemetry(Configuration)
+
             services.AddMvc();
             //Habilitando a compressao de dados de todas as requisições
             services.AddResponseCompression();
