@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using _2_Domain.StoreContext.Handlers;
-using _2_Domain.StoreContext.Repositories;
+﻿using _2_Domain.StoreContext.Handlers;
 using _2_Domain.StoreContext.Repositories.Interfaces;
-using _2_Domain.StoreContext.Services;
 using _2_Domain.StoreContext.Services.Interfaces;
 using _3_Infra.Context;
-using _3_Infra.Repository;
 using _3_Infra.Repository;
 using _3_Infra.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace _1_Api
@@ -27,7 +19,6 @@ namespace _1_Api
             services.AddMvc();
             //Habilitando a compressao de dados de todas as requisições
             services.AddResponseCompression();
-
             RegistrandoDependencias(services);
         }
 
@@ -54,10 +45,6 @@ namespace _1_Api
             app.UseMvc();
             //Habilitando a compressao de dados de todas as requisições
             app.UseResponseCompression();
-            // app.Run(async (context) =>
-            // {
-            //     await context.Response.WriteAsync("Hello World!");
-            // });
         }
     }
 }

@@ -38,4 +38,18 @@ Estando dentro de uma classlib, e adicionando outra classlib
 Aula13
 dotnet add reference (Caminho dos .csprojs)
 
-COntinua aula 33
+obs: somente no CommandResult, possui o Id
+==========================
+criando o contexto 
+dotnet add package Dapper
+==========================
+Adicionando MVC em um projeto web
+dotnet add package Microsoft.AspNetCore
+==========================
+Compressao de dados na API, para retorno de jsons sem quebra de linha
+dentro da API
+dotnet add package Microsoft.AspNetCore.ResponseCompression --version 2.0.1
+
+dotnet add package Microsoft.AspNetCore.ResponseCompression --version 2.2.0
+
+aula 56

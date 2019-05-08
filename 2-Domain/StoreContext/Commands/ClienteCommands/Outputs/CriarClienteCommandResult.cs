@@ -5,19 +5,15 @@ namespace _2_Domain.StoreContext.Commands.ClienteCommands.Outputs
 {
     public class CriarClienteCommandResult : ICommandResult
     {
-        public CriarClienteCommandResult(){}
-
-        public CriarClienteCommandResult(Guid id, string nome, string email)
+        public CriarClienteCommandResult(bool success, string message, object data)
         {
-            Id = id;
-            Nome = nome;
-            Email = email;
+            Success = success;
+            Message = message;
+            Data = data;
         }
 
-        public Guid Id { get; set; }
-        public String Nome { get;  set; }
-        public String Email { get;  set; }
-        
-        
+        public bool Success {  get;  set;}
+        public string Message {  get;  set; }
+        public object Data {  get;  set; }
     }
 }

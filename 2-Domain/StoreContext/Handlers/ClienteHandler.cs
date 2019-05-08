@@ -35,7 +35,6 @@ namespace _2_Domain.StoreContext.Handlers
             //verifica se email ja existe
             if(_clienteRepository.checkaEmail(command.Email)){
                 AddNotification("Email","Este Email ja esta em uso");
-                
             }
             
             //cria as vo´s
@@ -51,8 +50,10 @@ namespace _2_Domain.StoreContext.Handlers
             AddNotifications(email.Notifications);
             AddNotifications(cliente.Notifications);
 
-            if(Invalid)
-                return null;
+            if(Invalid){
+                return new CriarClienteCommandResult(false,"Campos enviados com erro", Notifications);
+            }
+                
             //inserir cliente no banco
 
             _clienteRepository.Save(cliente);
@@ -61,8 +62,12 @@ namespace _2_Domain.StoreContext.Handlers
             //envia email de boas vindas
             _emailService.EnviaEmail(email.Address, "teste@teste.com","Bem vindo", "seja Bem vindo");
             //retornar resultado para tela
-
-            return new CriarClienteCommandResult(cliente.Id,nome.ToString(),email.Address);
+            return new CriarClienteCommandResult(true,"Bem vindo",new {
+                        Id = cliente.Id,
+                        Nome = cliente.Nome.ToString(),
+                        Email = cliente.Email.Address
+            });
+            
         }
 
         public ICommandResult Handle(CriaEnderecoCommand command)

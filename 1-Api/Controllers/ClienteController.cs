@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using _2_Domain.StoreContext.Commands.ClienteCommands.Inputs;
 using _2_Domain.StoreContext.Commands.ClienteCommands.Outputs;
 using _2_Domain.StoreContext.Entities;
@@ -19,7 +20,7 @@ namespace _1_Api.Controllers
         public ClienteController(IClienteRepository clienteRepository,
                                  ClienteHandler handler){
                 _clienteRepository = clienteRepository;
-                _handler =handler;
+                _handler = handler;
         }
        
         [HttpGet]
@@ -32,8 +33,12 @@ namespace _1_Api.Controllers
         [Route("v1/{id:Guid}")]
         [ResponseCache(Duration=60)]
         public IActionResult GetById(Guid id){
-
-            return Ok(_clienteRepository.GetById(id));
+               return Ok(_clienteRepository.GetById(id));
+            // try{
+             
+            // }catch(Exception ex){
+            //     return BadRequest( ex.Message,HttpStatusCode.InternalServerError);
+            // }
         }
 
         [HttpGet]
@@ -60,11 +65,7 @@ namespace _1_Api.Controllers
 
         [HttpPost]
         public IActionResult Post([FromBody]CriaClienteCommand  command){
-            
             var result  = (CriarClienteCommandResult)_handler.Handle(command);
-            if(_handler.Invalid)
-                return BadRequest(_handler.Notifications);            
-
             return Ok(result);
         }
 
