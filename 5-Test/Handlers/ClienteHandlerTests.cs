@@ -34,11 +34,11 @@ namespace _5_Test.Handlers
             command.Telefone="11475789652";
             Assert.IsTrue(command.Valid());
             //mockando os repositórios
-            //var handler = new ClienteHandler(new FakeClienteRepository(), new FakeSmsRepository());
-            //var result =  handler.Handle(command);
+            var handler = new ClienteHandler(new FakeClienteRepository(), new FakeSmsRepository());
+            var result =  handler.Handle(command);
            
-            //Assert.AreNotEqual(null,result);
-            //Assert.IsTrue(handler.IsValid);
+            Assert.AreNotEqual(null,result);
+            Assert.IsTrue(handler.IsValid);
         }
     }
 }

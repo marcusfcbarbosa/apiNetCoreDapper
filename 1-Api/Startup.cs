@@ -31,7 +31,7 @@ namespace _1_Api
             Configuration = builder.Build();
 
             ///dai para ter acesso a qualquer chave que esta no json do appSettings
-            Settings.ConnectionStrings =Configuration["ConnectionStrings"];
+            //Settings.ConnectionStrings =Configuration["ConnectionStrings"];
 
             //Para poder publicar dentro de uma aplicação Azure (olhar depois)
             //services.addApplicationInsightsTelemetry(Configuration)
@@ -82,7 +82,7 @@ namespace _1_Api
             //Habilitando a compressao de dados de todas as requisições
             app.UseResponseCompression();
             //No momento da publicação ira exibir no elmah
-            app.UseElmahIo("APIKEY", new Guid("LOG_ID"));
+            //app.UseElmahIo("APIKEY", new Guid("LOG_ID"));
         }
     }
 }
