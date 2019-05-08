@@ -14,6 +14,8 @@ namespace _2_Domain.StoreContext.Repositories.Interfaces
          ContadorPedidosCliente RetornaPedidosCliente(string documento);
 
          IEnumerable<ListaClientesQueryResults> Get();
-        ClientesQueryResults GetById(Guid id);
+
+         ClientesQueryResults GetById(Guid  id);
+         
     }
 }

@@ -23,12 +23,14 @@ namespace _1_Api.Controllers
         }
        
         [HttpGet]
+        [ResponseCache(Duration=60)]
         public IActionResult Get(){
             return Ok(_clienteRepository.Get());
         }
 
         [HttpGet]
         [Route("v1/{id:Guid}")]
+        [ResponseCache(Duration=60)]
         public IActionResult GetById(Guid id){
 
             return Ok(_clienteRepository.GetById(id));
