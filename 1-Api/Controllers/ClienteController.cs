@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace _1_Api.Controllers
 {
-    [Route("clientes")]
+    [Route("Cliente")]
     public class ClienteController : Controller
     {
         private readonly IClienteRepository _clienteRepository;
@@ -28,10 +28,17 @@ namespace _1_Api.Controllers
         }
 
         [HttpGet]
-        [Route("{id:Guid}")]
+        [Route("v1/{id:Guid}")]
         public IActionResult GetById(Guid id){
 
             return Ok(_clienteRepository.GetById(id));
+        }
+
+        [HttpGet]
+        [Route("v2/{id:Guid}")]
+        public IActionResult GetByCpf(Guid cpf){
+
+            return Ok(_clienteRepository.GetById(cpf));
         }
 
         [HttpDelete]
