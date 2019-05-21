@@ -48,8 +48,14 @@ dotnet add package Microsoft.AspNetCore
 ==========================
 Compressao de dados na API, para retorno de jsons sem quebra de linha
 dentro da API
-dotnet add package Microsoft.AspNetCore.ResponseCompression --version 2.0.1
 
 dotnet add package Microsoft.AspNetCore.ResponseCompression --version 2.2.0
-
-aula 56
+============================
+instalação do Swagger na Api
+dotnet add package Swashbuckle.AspNetCore
+=============================
+instalação do Elmah
+dotnet add package Elmah.Io.AspNetCore
+============================
+trabalhando com AppSettings
+dotnet add package Microsoft.Extensions.Configuration.Json
