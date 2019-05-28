@@ -19,7 +19,7 @@ namespace _2_Domain.StoreContext.Commands.PedidosCommands.Inputs
                     .Requires()
                     .HasLen(ClienteId.ToString(),36, "ClienteId","Identificador de cliente inválido")
                     .IsGreaterThan(ItensPedido.Count,0,"ItensPedido","Nenhum item do pedido foi encontrado"));
-            return Valid();
+           return this.IsValid;
         }
 
     }
